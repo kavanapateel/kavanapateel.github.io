@@ -1,0 +1,122 @@
+header {
+    .logo {
+        font-size: 36px;
+    }
+  label {
+    display: flex;
+  }
+  input[type="checkbox"]:checked + div#menu-items {
+    display: none;
+  }
+  div#menu-items {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    right: 0;
+    top: 5.75rem;
+    border-bottom-left-radius: 1rem;
+    a {
+      text-align: end;
+      padding: 1rem;
+      width: 100%;
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--light);
+      }
+    }
+  }
+}
+
+section {
+  .home-content,
+  .about-content {
+    width: 100%;
+    padding: 0;
+    p {
+      width: 100%;
+      margin: 1rem 0;
+    }
+    div.socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &#about img {
+    display: none;
+  }
+  .img-box {
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    z-index: -1;
+    img {
+      border: none;
+      width: 200px;
+    }
+  }
+  .btn-box {
+    width: 100%;
+    align-items: center;
+    a {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+  &#exp {
+    .sub-section {
+      div {
+        width: 50vw;
+        width: 50svw;
+        aspect-ratio: 1/1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  &#education {
+    .sub-section {
+      div {
+        width: 50vw;
+        width: 50svw;
+        display: flex;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8);
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        border: 0;
+        h2, p {
+            display: flex;
+            flex-direction: column;
+              span {
+            font-size: 14px;
+          }
+        }
+        span.clg_loc {
+            font-size: 12px;
+        }
+      }
+    }
+    iframe {
+      display: none;
+    }
+  }
+  &#projects {
+    padding: 0;
+    .sub-section {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      div {
+        width: 100%;
+        aspect-ratio: 0;
+      }
+    }
+  }
+}

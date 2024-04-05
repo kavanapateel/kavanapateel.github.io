@@ -45,11 +45,6 @@ section {
       align-items: center;
     }
   }
-  .home-content {
-    p {
-      color: orangered;
-    }
-  }
   &#about img {
     display: none;
   }

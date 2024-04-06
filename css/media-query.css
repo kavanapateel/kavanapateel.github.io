@@ -5,7 +5,7 @@ header {
   label {
     display: flex;
   }
-  input[type="checkbox"]:checked + div#menu-items {
+  input[type="checkbox"]:not(:checked) + div#menu-items {
     display: none;
   }
   div#menu-items {

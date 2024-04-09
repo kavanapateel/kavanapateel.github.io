@@ -123,30 +123,31 @@ section {
 }
 
 footer {
-  display: flex;
-  height: fit-content;
-  justify-content: space-around;
-  align-items: start;
-  padding: 1rem 0;
-  background: orangered;
-  border-radius: 1rem 1rem 0 0;
-  h2 {
-    span {
-      color: var(--dark);
-    }
-  }
-  div {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    a {
-      width: 100%;
-      font-size: 10px;
-      padding: 0;
-      color: var(--dark);
-      i {
-        font-size: 12px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  div#mail {
+    width: 100%;
+    padding-inline: 0 1rem;
+    form {
+      input,
+      textarea {
+        width: 100%;
+      }
+      #hide-div {
+        text-indent: -99999px;
+        white-space: nowrap;
+        overflow: hidden;
+        position: absolute;
+        visibility: hidden;
       }
     }
+  }
+  div.socials {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
   }
 }

@@ -347,35 +347,94 @@ section {
 }
 
 footer {
-  height: 15vh;
-  height: 15svh;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 3rem;
-  background: linear-gradient(transparent, #121212ee);
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
-  color: var(--light);
+  justify-content: space-between;
+  padding: 1rem;
+  padding-inline: 1rem 3rem;
+  background: orangered;
+  border-radius: 1rem 1rem 0 0;
+  h2 {
+    height: 25vh;
+    height: 25svh;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    padding: 2rem 1rem 2rem 0;
+    background-color: var(--dark);
+    color: var(--light);
+  }
+  div.description,
+  div#mail,
   div.socials {
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    gap: 1rem;
+    padding: 1rem 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+  }
+  div#mail {
+    width: 35vw;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      color: var(--light);
+      label {
+        padding-inline: 1rem;
+      }
+      input,
+      textarea {
+        border: 1px solid var(--light);
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: transparent;
+        outline: none;
+        resize: none;
+        color: var(--light);
+      }
+      #hide-div {
+        text-indent: -99999px;
+        white-space: nowrap;
+        overflow: hidden;
+        position: absolute;
+        visibility: hidden;
+      }
+      button {
+        width: fit-content;
+        align-self: flex-end;
+        border: 2px solid transparent;
+        border-radius: 0.25rem;
+        padding: 0.5rem 2.5rem;
+        background-color: var(--dark);
+        color: orangered;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          border-color: var(--light);
+          background-color: transparent;
+          color: var(--light);
+          box-shadow: 0.25rem 0.25rem var(--light);
+        }
+      }
+    }
+  }
+  div.socials {
     a {
+      width: 100%;
       color: var(--light);
       font-size: 18px;
       border-bottom: 0.25rem solid transparent;
       transition: 0.3s ease-in;
       display: flex;
       gap: 1rem;
-      padding: 0.5rem 1rem;
+      padding: 0.5rem;
       i {
         font-size: 24px;
       }
       &:hover {
-        border-color: orangered;
+        filter: drop-shadow(0.25rem 0.25rem 0.25rem var(--dark));
       }
     }
   }

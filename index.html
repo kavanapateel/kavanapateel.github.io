@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/icons8-portfolium-32.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/icons8-portfolium-32.png"
+      type="image/x-icon"
+    />
     <title>Portfolio | Kavana Pateel</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
@@ -232,27 +236,60 @@
     </section>
 
     <footer id="contact">
-      <h2><span>Contact Links</span></h2>
+      <div class="description">
+        <h2>Details</h2>
+        <p>&#169;2024 Kavz Pateel. Enthusiast Web Developer.</p>
+      </div>
+
       <div class="socials">
-        <a
-          href="https://www.linkedin.com/in/kavana-31dec/"
-          target="_blank"
-          rel="noopener"
+        <h2>Socials</h2>
+        <div id="items">
+          <a
+            href="https://www.linkedin.com/in/kavana-31dec/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/kavanapateel/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-github"></i>
+            Github
+          </a>
+          <a href="mailto:kavanapateel31@gmail.com"
+            ><i class="fa-solid fa-envelope"></i>Mail Me</a
+          >
+        </div>
+      </div>
+
+      <div id="mail">
+        <h2>Contact</h2>
+        <form
+          action="https://public.herotofu.com/v1/e4a95c80-f65d-11ee-96b6-0d5b8cafec4b"
+          method="post"
+          accept-charset="UTF-8"
+          autocomplete="off"
         >
-          <i class="fa-brands fa-linkedin"></i>
-          LinkedIn
-        </a>
-        <a
-          href="https://github.com/kavanapateel/"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="fa-brands fa-github"></i>
-          Github
-        </a>
-        <a href="mailto:kavanapateel31@gmail.com"
-          ><i class="fa-solid fa-envelope"></i>Mail Me</a
-        >
+          <label for="name">Name</label>
+          <input name="Name" id="name" type="text" required />
+          <label for="email">Email Address</label>
+          <input name="Email" id="email" type="email" required />
+          <label for="msg">Message</label>
+          <textarea name="msg" id="msg" cols="30" rows="5"></textarea>
+          <button type="submit">Send mail</button>
+          <div id="hide-div" aria-hidden="true">
+            <input
+              type="text"
+              name="_gotcha"
+              tabindex="-1"
+              autocomplete="off"
+            />
+          </div>
+        </form>
       </div>
     </footer>
   </body>

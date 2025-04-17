@@ -1,0 +1,73 @@
+#projects {
+  padding: 80px 10%;
+  background: #081b29;
+}
+
+#projects h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#projects span {
+  color: #00abf0;
+}
+
+.sub-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#artofcakes,
+#hstl-mgt {
+  background: #112e42;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#artofcakes:hover,
+#hstl-mgt:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #00abf0;
+}
+
+#artofcakes img,
+#hstl-mgt img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#artofcakes p,
+#hstl-mgt p {
+  font-size: 16px;
+  text-align: center;
+}
+
+#artofcakes a,
+#hstl-mgt a {
+  color: #00abf0;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  #projects {
+    padding: 60px 10%;
+  }
+
+  #projects h1 {
+    font-size: 30px;
+  }
+
+  #artofcakes,
+  #hstl-mgt {
+    padding: 15px;
+  }
+} 

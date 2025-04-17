@@ -1,0 +1,56 @@
+#exp {
+  padding: 80px 10%;
+  background: #081b29;
+}
+
+#exp h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#exp span {
+  color: #00abf0;
+}
+
+.sub-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.details {
+  background: #112e42;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.details:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #00abf0;
+}
+
+.details p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.details a {
+  color: #00abf0;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  #exp {
+    padding: 60px 10%;
+  }
+
+  #exp h1 {
+    font-size: 30px;
+  }
+
+  .details p {
+    font-size: 16px;
+  }
+} 

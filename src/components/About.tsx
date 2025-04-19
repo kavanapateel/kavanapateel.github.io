@@ -3,40 +3,17 @@ import './About.css';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="about">
-      <img src="assets/7nvivi77.bmp" alt="My Image" />
-
-      <div className="about-content">
-        <h2 className="heading">
-          <span>About</span> Me
-        </h2>
-        <p>
-          As a developer, I am passionate about continuously learning and
-          expanding my skill set. Currently, I am focused on mastering newer
-          technologies and languages such as ReactJS, NodeJS, and PHP. These
-          technologies are widely used in modern web development and offer
-          powerful tools for creating dynamic and interactive web applications.
-        </p>
-        <div className="socials">
-          <a
-            href="https://www.linkedin.com/in/kavana-31dec/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-linkedin"></i>
-            LinkedIn
-          </a>
-          <a
-            href="https://github.com/kavanapateel/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-brands fa-github"></i>
-            Github
-          </a>
+    <div className="about-section">
+      <h2 className="section-title">About</h2>
+      <div className="section-content">
+        <div className="text-block">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <div className="text-block">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

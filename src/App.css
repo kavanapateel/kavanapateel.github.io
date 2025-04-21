@@ -362,4 +362,86 @@ span {
     border-right: none;
     border-bottom: 1px solid var(--border-color);
   }
+}
+
+.education-section {
+  padding: 2rem;
+  background-color: var(--secondary-bg);
+  border-radius: 8px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.education-details {
+  margin-bottom: 1.5rem;
+}
+
+.education-details h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.education-details .duration {
+  font-size: 0.85rem;
+  color: var(--text-color);
+  opacity: 0.8;
+  margin-bottom: 0.25rem;
+}
+
+.education-details .grade {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+}
+
+.education-details .grade span {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.education-details .institution {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.education-details .achievement {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--text-color);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.education-details .achievement::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+.extended-content {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .education-section {
+    padding: 1.5rem;
+  }
+
+  .education-details h3 {
+    font-size: 1rem;
+  }
+
+  .education-details .institution,
+  .education-details .grade,
+  .education-details .achievement {
+    font-size: 0.85rem;
+  }
+
+  .education-details .duration {
+    font-size: 0.8rem;
+  }
 } 

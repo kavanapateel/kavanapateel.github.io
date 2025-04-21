@@ -13,7 +13,7 @@ const Experience: React.FC = () => {
       <h2 className="section-title">Experience</h2>
       <div className="section-content">
         <div className="text-block">
-          <div className="experience-item current">
+          <div className="experience-details current">
             <h3>Software Engineer Trainee</h3>
             <p className="company">NearTekPod APAC Technologies</p>
             <p className="duration">Jan 2025 - Present</p>
@@ -25,7 +25,7 @@ const Experience: React.FC = () => {
 
           {showFullContent && (
             <div className="extended-content">
-              <div className="experience-item">
+              <div className="experience-details">
                 <h3>Software Developer Intern</h3>
                 <p className="company">RDL Technologies Pvt Ltd.</p>
                 <p className="duration">Apr - Sep 2024</p>

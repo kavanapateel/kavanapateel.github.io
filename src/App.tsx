@@ -78,25 +78,23 @@ function App() {
           </div>
 
           <div className="content-section">
-            <div className="greeting">HEY SLIM,</div>
+            <div className="home-content">
+              <h3>Hello,</h3>
+              <h1>I'm <span>Kavana</span>.</h1>
+              <p>
+                Welcome to my portfolio! I am a Developer and this page is just a part
+                of my developer's knowledge. Scroll through my projects (hope you like
+                them), and you may contact me through my easy-to-contact socials. To
+                view my resume, all you have to do is click the button below.
+              </p>
+              <div className="btn-box">
+                <a href="assets/Kavana_FullStack_Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-1">My Resume</a>
+              </div>
+            </div>
             <div className="profile-container">
               <div className="profile-image">
                 <img src="/assets/profile.jpg" alt="Profile" />
               </div>
-            </div>
-            <div className="tagline">Building Ideas, Building Solutions</div>
-            <div className="side-dots">
-              <span className="dot"></span>
-              <span className="dot"></span>
-              <span className="dot"></span>
-              <span className="dot"></span>
-              <span className="dot"></span>
-            </div>
-            <div className="social-icons">
-              <div className="icon"></div>
-              <div className="icon"></div>
-              <div className="icon"></div>
-              <div className="icon"></div>
             </div>
           </div>
 
@@ -182,10 +180,25 @@ function App() {
         
         <div className="side-elements right-side">
           <div className="circular-elements">
-            <div className="circle">
-              <span>Kavana</span>
+            <div className="circle contact-circle">
+              <div className="contact-content">
+                <h3>Contact Me</h3>
+                <div className="contact-links">
+                  <a href="mailto:kavanapateel31@gmail.com" className="contact-link">
+                    <i className="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/kavana-31dec/" target="_blank" rel="noopener noreferrer" className="contact-link">
+                    <i className="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="https://github.com/kavanapateel" target="_blank" rel="noopener noreferrer" className="contact-link">
+                    <i className="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="circle empty"></div>
           </div>
           <div className="featured-projects">
             <div className="cylindrical-element">

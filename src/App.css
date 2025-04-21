@@ -8,16 +8,15 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow-x  : hidden;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 
-body {
+/* body {
   background: #f1f3f5;
   color: #ededed;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
+} */
 
 section {
   min-height: 100vh;

@@ -35,6 +35,17 @@ const Experience: React.FC = () => {
                   <li>Assisted in Docker deployment, reducing deployment time</li>
                 </ul>
               </div>
+
+              <div className="experience-details">
+                <h3>Web Developer Intern</h3>
+                <p className="company">CodSoft</p>
+                <p className="duration">Feb 2024 - Mar 2024</p>
+                <ul className="responsibilities">
+                  <li>Developed responsive web applications using HTML5, CSS3, and JavaScript</li>
+                  <li>Created a functional calculator application with modern UI/UX design</li>
+                  <li>Collaborated with team members to implement best practices in web development</li>
+                </ul>
+              </div>
             </div>
           )}
           

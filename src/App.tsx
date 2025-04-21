@@ -14,13 +14,37 @@ function App() {
     <div className="App">
       <div className="portfolio-layout">
         <div className="side-elements left-side">
-          <div className="side-card name-card">
-            <h2>Kavana</h2>
+          <div className="side-card certificate-card">
+            <h2 className="card-title">Certificates</h2>
+            <div className="certificate-list">
+              <div className="certificate-item">
+                <h3>Image Processing</h3>
+                <p>Applied image processing techniques for data analysis and visualization</p>
+              </div>
+              <div className="certificate-item">
+                <h3>JavaScript Foundations</h3>
+                <p>MicroDegree Course: Advanced knowledge in JavaScript, ES6+ features, DOM manipulation, and asynchronous programming</p>
+              </div>
+            </div>
           </div>
-          <div className="side-card branding-card">
-            <h2>KAVANA</h2>
-            <div className="decorative-element">
-              <img src="/assets/pampas-grass.png" alt="Decorative pampas grass" />
+          <div className="side-card project-card">
+            <h2 className="card-title">Projects</h2>
+            <div className="project-list">
+              <div className="project-item">
+                <h3>Art of Cakes</h3>
+                <p>PHP & MySQL web application simulating bakery environment with customer and bakery modules</p>
+                <a href="https://github.com/kavanapateel/ArtOfCakes" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+              <div className="project-item">
+                <h3>Hostel Management</h3>
+                <p>Android (Java) & SQLite application for hostel operations with student ID functionality</p>
+                <a href="https://github.com/kavanapateel/Hostel-Manager" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+              <div className="project-item">
+                <h3>Simple Calculator</h3>
+                <p>HTML5, CSS3 & JS calculator application with standard calculator functions</p>
+                <a href="https://kavanapateel.github.io/Calculator/" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
             </div>
           </div>
         </div>

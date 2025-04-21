@@ -187,8 +187,52 @@ function App() {
             </div>
             <div className="circle empty"></div>
           </div>
-          <div className="cylindrical-element">
-            <div className="text">Kavana</div>
+          <div className="featured-projects">
+            <div className="cylindrical-element">
+              <div className="project-highlight">
+                <h3>Current Project</h3>
+                <div className="project-content">
+                  <h4>NTP - LCP System</h4>
+                  <p className="company">NearTekPod APAC Technologies</p>
+                  <p className="description">
+                    Employee attendance & leave management system with holiday scheduling. Built Holiday Records Module and Employee Profile Page using Next.js 14 and Node-RED.
+                  </p>
+                  <div className="achievements">
+                    <li>Designed & implemented Holiday Records Module</li>
+                    <li>Developed responsive Employee Profile interface</li>
+                    <li>Integrated Node-RED backend workflows</li>
+                  </div>
+                  <div className="tech-stack">
+                    <span>Next.js 14</span>
+                    <span>Node-RED</span>
+                    <span>React</span>
+                    <span>API Integration</span>
+                  </div>
+                  <a href="https://www.linkedin.com/in/kavana-31dec/" target="_blank" rel="noopener noreferrer">
+                    View on LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="cylindrical-element">
+              <div className="project-highlight">
+                <h3>Previous Project</h3>
+                <div className="project-content">
+                  <h4>Process Monitoring System</h4>
+                  <p className="company">RDL Technologies</p>
+                  <p className="description">Enhanced system efficiency by 25% using React.js and Node.js. Implemented real-time monitoring and user authentication.</p>
+                  <div className="tech-stack">
+                    <span>React.js</span>
+                    <span>Node.js</span>
+                    <span>Docker</span>
+                  </div>
+                  <a href="https://www.linkedin.com/in/kavana-31dec/" target="_blank" rel="noopener noreferrer">
+                    View on LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

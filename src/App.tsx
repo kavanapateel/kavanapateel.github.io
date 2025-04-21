@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from './components/Header';
-import Home from './components/Home';
 import About from './components/About';
 import Experience from './components/Experience';
 import './App.css';
@@ -25,17 +23,12 @@ function App() {
           <div className="header-section">
             <div className="brand">Kavana</div>
             <nav className="main-nav">
-              <a href="#" className="nav-link">experience</a>
-              <a href="#" className="nav-link">education</a>
-              <a href="#" className="nav-link">technology</a>
-              <a href="#" className="nav-link">projects</a>
-              <a href="#" className="nav-link">skills</a>
-              <a href="#" className="nav-link">portfolio</a>
-              <a href="#" className="nav-link">timeline</a>
-              <a href="#" className="nav-link">resume</a>
-              <div className="login-circle">
-                <span className="login-icon"></span>
-              </div>
+              <a href="#about" className="nav-link">About Me</a>
+              <a href="#experience" className="nav-link">Experience</a>
+              <a href="#education" className="nav-link">Education</a>
+              <a href="#projects" className="nav-link">Projects</a>
+              <a href="#certificate" className="nav-link">Certificate</a>
+              <a href="#contact" className="nav-link">Contact Me</a>
             </nav>
           </div>
 

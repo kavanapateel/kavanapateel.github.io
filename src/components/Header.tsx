@@ -12,22 +12,16 @@ const Header: React.FC = () => {
 
       <nav className="main-nav">
         <ul className="nav-links">
-          <li><a href="#" className="nav-link">Home</a></li>
+          <li><a href="#about" className="nav-link">About Me</a></li>
           <li><a href="#experience" className="nav-link">Experience</a></li>
           <li><a href="#education" className="nav-link">Education</a></li>
-          <li><a href="#technology" className="nav-link">Technology</a></li>
           <li><a href="#projects" className="nav-link">Projects</a></li>
-          <li><a href="#skills" className="nav-link">Skills</a></li>
-          <li><a href="#portfolio" className="nav-link">Portfolio</a></li>
-          <li><a href="#timeline" className="nav-link">Timeline</a></li>
-          <li><a href="#resume" className="nav-link">Resume</a></li>
+          <li><a href="#certificate" className="nav-link">Certificate</a></li>
+          <li><a href="#contact" className="nav-link">Contact Me</a></li>
         </ul>
-        <div className="login-btn">
-          <a href="#login" className="login-link">Login</a>
-        </div>
       </nav>
     </header>
   );
 };
 
-export default Header; 
+export default Header;

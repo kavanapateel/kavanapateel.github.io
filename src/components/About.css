@@ -77,6 +77,8 @@
 
 .about-section {
   padding: 2rem;
+  background-color: var(--secondary-bg);
+  border-radius: 8px;
 }
 
 .section-title {
@@ -89,14 +91,66 @@
 .section-content {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .text-block {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: var(--text-color);
-  opacity: 0.8;
+}
+
+.text-block p {
+  margin-bottom: 1.5rem;
+}
+
+.extended-content {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.contact-info {
+  margin: 1.5rem 0;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--text-color);
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  color: var(--text-color);
 }
 
 @media (max-width: 768px) {
@@ -106,5 +160,9 @@
   
   .section-title {
     font-size: 2rem;
+  }
+  
+  .text-block {
+    font-size: 0.9rem;
   }
 } 

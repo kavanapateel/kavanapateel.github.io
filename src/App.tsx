@@ -20,6 +20,10 @@ function App() {
                 <h3>JavaScript Foundations</h3>
                 <p>MicroDegree Course: Advanced knowledge in JavaScript, ES6+ features, DOM manipulation, and asynchronous programming</p>
               </div>
+              <div className="certificate-item">
+                <h3>Full-Stack Engineer Journey – Skillsoft</h3>
+                <p>Completed a comprehensive program covering front-end and back-end development, enhancing skills in full-stack application design and deployment.</p>
+              </div>
             </div>
           </div>
           <div className="side-card project-card">

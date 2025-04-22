@@ -213,6 +213,28 @@
   text-decoration: underline;
 }
 
+.projects-section {
+  padding: 2rem;
+  background-color: var(--secondary-bg);
+  border-radius: 8px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 4rem);
+  overflow-y: auto;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);

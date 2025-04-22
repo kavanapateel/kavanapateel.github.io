@@ -1,7 +1,7 @@
 import React from 'react';
-import './About.css';
+import './Experience.css';
 
-const About: React.FC = () => {
+const Experience: React.FC = () => {
   return (
     <div className="experience-section" id="experience">
       <h2 className="section-title">Experience</h2>
@@ -16,33 +16,33 @@ const About: React.FC = () => {
               <li>Implementing RESTful APIs & backend logic, enhancing system performance & reducing response time by 25%</li>
             </ul>
           </div>
-            <div className="extended-content">
-              <div className="experience-details">
-                <h3>Software Developer Intern</h3>
-                <p className="company">RDL Technologies Pvt Ltd.</p>
-                <p className="duration">Apr - Sep 2024</p>
-                <ul className="responsibilities">
-                  <li>Improved Process Monitoring System using ReactJS and NodeJS, increasing operational efficiency by 25%</li>
-                  <li>Developed and deployed a user authentication system, reducing login errors by 30%</li>
-                  <li>Assisted in Docker deployment, reducing deployment time</li>
-                </ul>
-              </div>
-
-              <div className="experience-details">
-                <h3>Web Developer Intern</h3>
-                <p className="company">CodSoft</p>
-                <p className="duration">Feb 2024 - Mar 2024</p>
-                <ul className="responsibilities">
-                  <li>Developed responsive web applications using HTML5, CSS3, and JavaScript</li>
-                  <li>Created a functional calculator application with modern UI/UX design</li>
-                  <li>Collaborated with team members to implement best practices in web development</li>
-                </ul>
-              </div>
+          <div className="extended-content">
+            <div className="experience-details">
+              <h3>Software Developer Intern</h3>
+              <p className="company">RDL Technologies Pvt Ltd.</p>
+              <p className="duration">Apr - Sep 2024</p>
+              <ul className="responsibilities">
+                <li>Improved Process Monitoring System using ReactJS and NodeJS, increasing operational efficiency by 25%</li>
+                <li>Developed and deployed a user authentication system, reducing login errors by 30%</li>
+                <li>Assisted in Docker deployment, reducing deployment time</li>
+              </ul>
             </div>
+
+            <div className="experience-details">
+              <h3>Web Developer Intern</h3>
+              <p className="company">CodSoft</p>
+              <p className="duration">Feb 2024 - Mar 2024</p>
+              <ul className="responsibilities">
+                <li>Developed responsive web applications using HTML5, CSS3, and JavaScript</li>
+                <li>Created a functional calculator application with modern UI/UX design</li>
+                <li>Collaborated with team members to implement best practices in web development</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default About;
+export default Experience;

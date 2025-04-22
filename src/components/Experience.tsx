@@ -13,8 +13,10 @@ const Experience: React.FC = () => {
               <div className="project-overlay">
                 <h3>Art of Cakes</h3>
                 <p>
-                  PHP based MySQL web application that simulates the bakery environment.
-                  Supports both customer and bakery modules.
+                  The Art of Cakes is my BCA project. 
+                  It is a PHP based MySQL web application that simulates the bakery environment. 
+                  Supports both customer and bakery modules. 
+                  To view this project, click on the button below.
                 </p>
                 <a
                   href="https://github.com/kavanapateel/ArtOfCakes"
@@ -31,8 +33,9 @@ const Experience: React.FC = () => {
               <div className="project-overlay">
                 <h3>Hostel Management System</h3>
                 <p>
-                  A comprehensive system built with React and Node.js for managing
-                  hostel operations.
+                  
+                The Hostel Management is an Android(Java) - SQLite project, that typically demonstrates online applications 
+                for a hostel. The student login serves also serves as an Identity card. To view this project, click on the button below.
                 </p>
                 <a
                   href="https://github.com/kavanapateel/Hostel-Management-System"
@@ -49,8 +52,8 @@ const Experience: React.FC = () => {
               <div className="project-overlay">
                 <h3>Simple Calculator</h3>
                 <p>
-                  A modern calculator application with basic arithmetic operations
-                  and a clean user interface.
+                The Simple Calculator project was one of the tasks assigned during my Internship at CodSoft. 
+                Demonstrates functions of a regular calculator using HTML5, CSS3 and JS. To view this project, click on the button below.
                 </p>
                 <a href="https://github.com/kavanapateel/Simple-Calculator" target="_blank" rel="noopener noreferrer">
                   View Project

@@ -4,7 +4,7 @@ import './Experience.css';
 const Experience: React.FC = () => {
   return (
     <div className="about-section" id="about">
-      <h2 className="section-title">About Me</h2>
+      <h2 className="section-title">Projects</h2>
       <div className="section-content">
         <div className="text-block">
           <div className="projects-grid">

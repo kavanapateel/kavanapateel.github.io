@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './About.css';
 
 const About: React.FC = () => {
-  const [showFullContent, setShowFullContent] = useState(false);
-
-  const toggleContent = () => {
-    setShowFullContent(!showFullContent);
-  };
-
   return (
     <div className="experience-section" id="experience">
       <h2 className="section-title">Experience</h2>
@@ -22,8 +16,6 @@ const About: React.FC = () => {
               <li>Implementing RESTful APIs & backend logic, enhancing system performance & reducing response time by 25%</li>
             </ul>
           </div>
-
-          {showFullContent && (
             <div className="extended-content">
               <div className="experience-details">
                 <h3>Software Developer Intern</h3>
@@ -47,11 +39,6 @@ const About: React.FC = () => {
                 </ul>
               </div>
             </div>
-          )}
-          
-          <button className="read-more-btn" onClick={toggleContent}>
-            {showFullContent ? 'Show Less' : 'View More Experience'}
-          </button>
         </div>
       </div>
     </div>

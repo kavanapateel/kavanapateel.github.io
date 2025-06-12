@@ -1,7 +1,7 @@
 .projects-container {
   background-color: #1a152d;
   border-radius: 10px;
-  padding: 40px;
+  padding: 20px 40px;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
@@ -15,14 +15,23 @@
   color: #c440da; /* Fallback */
   display: inline-block; /* Ensure it behaves like a block for background properties but respects content width */
   font-size: 2em;
-  margin-bottom: 30px;
+  margin: 0 0 20px 0;
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  overflow-x: auto;
   gap: 30px;
-  justify-content: center;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.projects-grid::-webkit-scrollbar {
+  display: none;
 }
 
 .project-card {
@@ -34,6 +43,10 @@
   align-items: center;
   text-align: center;
   transition: transform 0.2s ease-in-out;
+  min-width: 300px;
+  max-width: 300px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
 }
 
 .project-card:hover {
@@ -42,8 +55,8 @@
 
 .project-image {
   width: 100%;
-  max-width: 250px;
-  height: auto;
+  height: 180px;
+  object-fit: cover;
   border-radius: 5px;
   margin-bottom: 15px;
 }
@@ -52,6 +65,13 @@
   color: #e0e0e0;
   font-size: 1.3em;
   margin-bottom: 10px;
+}
+
+.project-description {
+  color: #b0b0b0;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  line-height: 1.4;
 }
 
 .project-technologies {
@@ -74,19 +94,25 @@
   color: #c440da;
   text-decoration: none;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: auto;
+  padding: 8px 16px;
+  border: 2px solid #c440da;
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
 
 .live-demo-link:hover {
-  text-decoration: underline;
+  background-color: #c440da;
+  color: white;
 }
 
 @media (max-width: 768px) {
   .projects-container {
     padding: 20px;
   }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
+  
+  .project-card {
+    min-width: 260px;
+    max-width: 260px;
   }
 } 

@@ -2,14 +2,18 @@
   background-color: #1a152d;
   border-radius: 10px;
   padding: 40px;
-  max-width: 900px;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
 }
 
 .projects-container h2 {
-  color: #c440da;
+  background-image: linear-gradient(to right, #c440da, #8a2be2) !important; /* Purple gradient */
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important; /* Standard property for broader compatibility */
+  color: #c440da; /* Fallback */
+  display: inline-block; /* Ensure it behaves like a block for background properties but respects content width */
   font-size: 2em;
   margin-bottom: 30px;
 }

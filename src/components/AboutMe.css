@@ -5,7 +5,6 @@
   padding: 40px;
   align-items: center;
   gap: 40px;
-  max-width: 900px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -23,7 +22,12 @@
 }
 
 .about-me-content h2 {
-  color: #c440da; /* Purple color for the heading */
+  background-image: linear-gradient(to right, #c440da, #8a2be2); /* Purple gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Standard property for broader compatibility */
+  color: #cf07f3; /* Fallback for browsers that don't support text fill color */
+  display: inline-block; /* Ensure it behaves like a block for background properties but respects content width */
   font-size: 2em;
   margin-bottom: 10px;
 }

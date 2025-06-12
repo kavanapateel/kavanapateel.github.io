@@ -1,45 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
-
-:root {
-  --bg-color: #d4c4b5;
-  --text-color: #3a2f2a;
-  --accent-color: #5a8a8a;
-  --secondary-bg: #e0d4c4;
-  --border-color: #c5b8a8;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  overflow-x: hidden;
   margin: 0;
+  font-family: 'Inter', sans-serif; /* Using Inter font, common for modern UIs */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Playfair Display', serif;
-}
-
-.section-title {
-  font-size: 2.8rem;
-  font-weight: 500;
-  color: var(--text-color);
-  margin-bottom: 1.5rem;
+  background-color: #0d0a1b; /* Dark background color based on the image */
+  color: #e0e0e0; /* Light text color for contrast */
 }
 
 code {

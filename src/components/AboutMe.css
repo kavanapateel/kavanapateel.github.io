@@ -1,0 +1,46 @@
+.about-me-container {
+  display: flex;
+  background-color: #1a152d; /* Darker background for the section */
+  border-radius: 10px;
+  padding: 40px;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.profile-image-wrapper {
+  flex-shrink: 0;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #6a1b9a; /* Purple border around the image */
+}
+
+.about-me-content h2 {
+  color: #c440da; /* Purple color for the heading */
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.about-me-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about-me-content {
+    text-align: center;
+  }
+} 

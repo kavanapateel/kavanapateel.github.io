@@ -132,4 +132,149 @@
   .timeline-content {
     padding-left: 30px;
   }
+}
+
+.experience-section {
+  padding: 2rem 2rem;
+  background-color: #1a152d;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  background-image: linear-gradient(to right, #c440da, #8a2be2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #cf07f3;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #c440da, #8a2be2);
+  border-radius: 2px;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  background: #2a253d;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.experience-card.current {
+  border: 2px solid #c440da;
+}
+
+.card-header {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #c440da 0%, #8a2be2 100%);
+  color: white;
+  position: relative;
+}
+
+.company-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  backdrop-filter: blur(5px);
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.card-header h4 {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+  color: #ffffff;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.duration {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #a0a0a0;
+  margin-bottom: 1rem;
+}
+
+.duration i {
+  color: #c440da;
+}
+
+.project-highlight {
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: #3a354d;
+  color: #c440da;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: #c440da;
+  color: white;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 2rem 1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
 } 

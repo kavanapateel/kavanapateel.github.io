@@ -3,7 +3,7 @@ import './Experience.css';
 
 const Experience: React.FC = () => {
   return (
-    <section className="experience-section">
+    <section className="experience-section" id="experience">
       <h2 className="section-title">Professional Journey</h2>
       <div className="experience-grid">
         <div className="experience-card current">

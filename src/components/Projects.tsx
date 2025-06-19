@@ -70,7 +70,7 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="projects">
       <h2>Projects</h2>
       <div className="projects-grid" ref={gridRef}>
         {projectsData.map((project, index) => (

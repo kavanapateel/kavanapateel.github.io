@@ -24,7 +24,7 @@ const AboutMe: React.FC = () => {
           of what I've learned and loved building. <br />
           I hope you enjoy checking them out as much as I enjoyed creating them!
         </p>
-        <p>📄 Want to see more?  <br />
+        <p>
           Click below to view or download my resume.
         </p>
         <button className="resume-button">

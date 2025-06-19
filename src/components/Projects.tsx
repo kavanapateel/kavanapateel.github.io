@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Projects.css';
 
 interface ProjectCardProps {
@@ -61,14 +61,23 @@ const Projects: React.FC = () => {
     }
   ];
 
+  const gridRef = useRef<HTMLDivElement>(null);
+
+  const handleArrowClick = () => {
+    if (gridRef.current) {
+      gridRef.current.scrollBy({ left: 320, behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="projects-container">
       <h2>Projects</h2>
-      <div className="projects-grid">
+      <div className="projects-grid" ref={gridRef}>
         {projectsData.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
       </div>
+      <div className="scroll-arrow" onClick={handleArrowClick}>&gt;</div>
     </div>
   );
 };
